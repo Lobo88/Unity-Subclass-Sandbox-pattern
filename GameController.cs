@@ -32,11 +32,12 @@ namespace SubclassSandbox
             var item = superPowers.Find(x => x.name == "Dive");
             // if (item == null)
             //   throw new Exception();
-            Debug.Log(item+"lokalizacja");
+           // Debug.Log(item+"lokalizacja");
         }
 
         void Update()
         {
+         
 
             findPower();
             for (int i = 0; i < superPowers.Count; i++)
@@ -44,7 +45,7 @@ namespace SubclassSandbox
              
                 superPowers[i].Activate();
                 if (NamePower(superPowers[i], superPowers[i].name)==true) {
-                    Debug.Log("super power znaleziony");
+                  //  Debug.Log("super power znaleziony");
                 };
                 }
             
